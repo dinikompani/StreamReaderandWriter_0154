@@ -11,6 +11,14 @@ int main() {
         cout << "Pernyataan tidak akan dieksekusi" << endl;
         
     }
+    catch (int a) {
+        //blok ini akan dieksekusi
+        cout << "Pengecualian akan dieksekusi" << endl;
+    }
+    catch (...) {
+        cout << "default pengecualian dieksekusi" << endl;
+    }
 
+    return 0;
 
 }
