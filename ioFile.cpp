@@ -19,7 +19,13 @@ int main() {
         //mendapatkan setiap karakter dalam satu baris
         getline(cin, baris);
         
+        //loop akan berhenti jika anda memasukkan karkter q
+        if (baris == "q") break;
+        //menulis dan memasukkan nilai dari 'baris' ke dalam file
+        outfile << baris << endl;
+
     }
+    outfile.close();   //selesai menulis sekarang tutup filenya
     
 
 }
